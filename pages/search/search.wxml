@@ -1,0 +1,13 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+<view class="searchHead">
+<input class="seachin" value="{{inputValue}}" placeholder="搜素您想住的区域或者小区" bindinput="handlerInputChange"
+placeholder-class="placeholderSty"
+/>
+<!-- 搜素图标 -->
+<icon wx:if="{{showInfo}}"
+type="search"
+size="20"
+class="icon-small" ></icon>
+</view>
+</view>

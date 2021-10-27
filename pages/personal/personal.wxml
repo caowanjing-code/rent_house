@@ -1,0 +1,181 @@
+<!--index.wxml-->
+<view class="personal">
+<!-- 头部用户登录区域 -->
+<view class="user">
+<view class="icon">
+  <view class="iconfont icon-xinxi"></view>
+  <view class="iconfont icon-shezhi"></view>
+</view>
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<!-- 一些设置区域 -->
+<view class="activity">
+<view class="user_box">
+<view class="box">
+<view class="box_circle">
+<view class="iconfont icon-youhuiquan">
+</view>
+
+</view>
+<span class="icon_title">
+  优惠券
+</span>
+</view>
+
+<view class="box">
+<view class="box_circle">
+<view class="iconfont icon-shoucang">
+</view>
+
+</view>
+<span class="icon_title">
+  我的收藏
+</span>
+</view>
+<view class="box">
+<view class="box_circle">
+<view class="iconfont icon-lishixiao">
+</view>
+
+</view>
+<span class="icon_title">
+  约看
+</span>
+</view>
+<view class="box">
+<view class="box_circle">
+<view class="iconfont icon-dingdan">
+</view>
+
+</view>
+<span class="icon_title">
+  订单
+</span>
+</view>
+
+</view>
+<view class="user_box">
+<view class="box">
+<view class="box_circle">
+<view class="iconfont icon-kefu">
+</view>
+
+</view>
+<span class="icon_title">
+  私人客服
+</span>
+</view>
+
+<view class="box">
+<view class="box_circle">
+<view class="iconfont icon-youhuiquan">
+</view>
+
+</view>
+<span class="icon_title">
+  优惠券
+</span>
+</view>
+<view class="box">
+<view class="box_circle">
+<view class="iconfont icon-weixin">
+</view>
+
+</view>
+<span class="icon_title">
+  微聊
+</span>
+</view>
+<view class="box">
+<view class="box_circle">
+<view class="iconfont icon-pingjia">
+</view>
+
+</view>
+<span class="icon_title">
+  投诉建议
+</span>
+</view>
+
+</view>
+</view>
+
+<!-- 宜居管家 -->
+<view class="housekeeper">
+<view class="service_name">
+<h1 class="housekepper_title">
+宜居管家
+</h1>
+<p class="detaile">宜居专项服务</p>
+</view>
+<!-- 盒子部分 -->
+<view class="housekeeper_box">
+<view class="box_content">
+
+<view class="housekeeper_icon">
+<view class="iconfont icon-querenhetongquerenhetongqueding">
+</view>
+<span class="icon_title">
+  我的合同
+</span>
+</view>
+<view class="housekeeper_icon">
+<view class="iconfont icon-zhuanzu">
+</view>
+<span class="icon_title">
+  转租
+</span>
+</view>
+<view class="housekeeper_icon">
+<view class="iconfont icon-ic_business_refund24px">
+</view>
+<span class="icon_title">
+  退租
+</span>
+</view>
+</view>
+<view class="box_content">
+
+<view class="housekeeper_icon">
+<view class="iconfont icon-zmxy">
+</view>
+<span class="icon_title">
+  芝麻信用
+</span>
+</view>
+<view class="housekeeper_icon">
+<view class="iconfont icon-zhuanzu">
+</view>
+<span class="icon_title">
+  续租
+</span>
+</view>
+<view class="housekeeper_icon">
+<view class="iconfont icon-dingdan">
+</view>
+<span class="icon_title">
+  账单
+</span>
+</view>
+</view>
+</view>
+</view>
+
+</view>

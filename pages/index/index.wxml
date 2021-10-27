@@ -1,0 +1,52 @@
+
+<view class="home">
+<!-- 头部搜素区域 -->
+<view class="iconfont icon-dingxiang"></view>
+<!-- 输入框输入效果 -->
+<SearchInput  
+bindinput="selectResult">
+</SearchInput>
+<view class="iconfont icon-xinxi"></view>
+<!-- 轮播图区域 -->
+<swiper indicator-color="#ffffff" indicator-active-color="#ff5555"
+indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiperItem">
+<swiper-item wx:for="{{swiperList}}"
+wx:key="this">
+<image mode="heightFix" class="swiper-img" src="{{item.imgUrl}}">
+</image>
+</swiper-item>
+</swiper>
+<!-- 找室友找房子 -->
+<view class="find">
+<view class="find_classmate">
+<span>找室友</span>
+</view>
+<view class="find_house">
+<span>宜居社区</span>
+</view>
+</view>
+<!-- 热门房源 -->
+<view class="hot"
+wx:for="{{!searchList?hot:searchList}}"
+wx:key="this">
+<h1 class="hot_house">热门房源</h1>
+<view class="hot_house_whole">
+<image mode="heightFix" class="hot_house_img" src="{{item.imgUrl}}">
+</image>
+<!-- 左边信息 -->
+<view class="details">
+<p class="hot_house_whole_message" word-wrap: break-word>{{item.address_message}}</p><br />
+<p class="hot_house_whole_message_detail">{{item.house_message}}</p>
+</view>
+<!-- 右边按钮 -->
+<view class="whole_button">
+<button class="whole_rent">整租</button>
+<span class="house_price">{{item.house_price}}元/月</span>
+</view>
+</view>
+</view>
+
+<!-- 无搜索结果 -->
+<view class="project-null" wx:if="{{searchList.length == 0}}"> 无搜索结果</view>
+</view>

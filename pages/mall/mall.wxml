@@ -1,0 +1,54 @@
+<view class="mall">
+<!-- 头部搜素区域 -->
+  <SearchInput></SearchInput>
+  <view class="iconfont icon-gouwuche">
+  </view>
+<!-- 轮播区域 -->
+<swiper indicator-color="#ffffff" indicator-active-color="#ff5555"
+indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiperItem">
+<swiper-item wx:for="{{swiperList}}"
+wx:key="this">
+<image class="swiper-img" src="{{item.imgUrl}}">
+</image>
+</swiper-item>
+</swiper>
+
+<!-- 新品上市和二手商城 -->
+<view class="secondHand">
+<view class="new">
+<span>新品上市</span>
+</view>
+<view class="secondHand_mall">
+<span>二手商城</span>
+</view>
+</view>
+
+<!-- 热销单品 -->
+<view class="hot_singles">
+<view class="hot_singles_title">
+{{hotSingles.title}}
+</view>
+<view class="hot_box">
+<view class="box1"
+wx:for="{{commonUseList}}">
+<image mode="widthFix" class="box1_img" src="{{item.imgUrl}}"></image>
+<view class="box1_name">{{item.name}}</view>
+</view>
+
+</view>
+</view>
+<!-- 家庭常用 -->
+<view class="hot_singles">
+<view class="hot_singles_title">
+{{commonUse.title}}
+</view>
+<view class="hot_box">
+<view class="box1"
+wx:for="{{hotSinglesList}}">
+<image mode="widthFix" class="box1_img" src="{{item.imgUrl}}"></image>
+<view class="box1_name">{{item.name}}</view>
+</view>
+</view>
+</view>
+</view>

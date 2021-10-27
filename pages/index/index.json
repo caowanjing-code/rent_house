@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "SearchInput":"../../weui-miniprogram/searchbar/searchbar"
+  },
+  "navigationBarTitleText": "首页"
+}

@@ -1,0 +1,50 @@
+<view class="service">
+<!-- 头部区域 -->
+<view class="header">
+<view class="iconfont icon-dingxiang">
+</view>
+<span class="header_title">生活服务</span>
+<view class="iconfont icon-xinxi"></view>
+</view>
+
+<!-- 头部下面图片区域 -->
+<view class="header_img">
+<image class="header_img_content" mode="widthFix" src="../../img/img_banner_service.png"></image>
+</view>
+
+<!-- 生活缴费 -->
+<view class="LifePayment">
+<view class="LifePayment_title">
+生活缴费
+</view>
+<view class="LifePayment_box">
+<view class="content_box">
+<view class="iconfont icon-shuifei">
+<span class="content_box_name">水费</span>
+</view>
+</view>
+<view class="content_box">
+<view class="iconfont icon-electricity_icon">
+<span class="content_box_name">电费</span>
+</view>
+</view>
+<view class="content_box">
+<view class="iconfont icon-kuandai">
+<span class="content_box_name">宽带</span>
+</view>
+</view>
+<view class="content_box">
+<view class="iconfont icon-caidan">
+<span class="content_box_name">更多</span>
+</view>
+</view>
+</view>
+</view>
+
+<!-- 保洁，搬家之类的图片 -->
+<view class="service_content">
+<view class="service_content_classfiy">
+<span class="service_content_name">保洁</span>
+</view>
+</view>
+</view>

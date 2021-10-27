@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../weui-miniprogram/searchbar/searchbar"
+  },
+  "navigationBarTitleText": "商城"
+}

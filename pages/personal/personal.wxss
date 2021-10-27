@@ -1,0 +1,173 @@
+/**index.wxss**/
+.personal {
+  width: 100%;
+  height: 100%;
+}
+.user {
+  background-color: #ff5555;
+  height: 362rpx;
+  width: 100%;
+}
+.user .icon {
+  width: 100%;
+  background-color: #ff5555;
+}
+.user .icon .icon-xinxi {
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 20px;
+  color: #ffffff;
+}
+.user .icon .icon-shezhi {
+  float: right;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  font-size: 20px;
+  color: #ffffff;
+}
+.user .userinfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.user .userinfo-avatar {
+  overflow: hidden;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.activity {
+  margin-top: 20rpx;
+  display: block;
+  width: 100%;
+  height: 460rpx;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 2px #cccccc;
+}
+.activity .user_box {
+  display: flex;
+  float: left;
+  margin-top: 20rpx;
+  width: 100%;
+}
+.activity .user_box .box {
+  width: 25%;
+  text-align: center;
+}
+.activity .user_box .box .box_circle {
+  margin-top: 20rpx;
+  margin-left: 44rpx;
+  margin-bottom: 16rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 1px solid #ff5555;
+  text-align: center;
+}
+.activity .user_box .box .box_circle .icon-youhuiquan {
+  line-height: 120rpx;
+  color: #ff5555;
+  font-size: 24px;
+}
+.activity .user_box .box .box_circle .icon-shoucang {
+  line-height: 120rpx;
+  color: #ff5555;
+  font-size: 24px;
+}
+.activity .user_box .box .box_circle .icon-lishixiao {
+  line-height: 120rpx;
+  color: #ff5555;
+  font-size: 24px;
+}
+.activity .user_box .box .box_circle .icon-dingdan {
+  line-height: 120rpx;
+  color: #ff5555;
+  font-size: 24px;
+}
+.activity .user_box .box .box_circle .icon-kefu {
+  line-height: 120rpx;
+  color: #ff5555;
+  font-size: 24px;
+}
+.activity .user_box .box .box_circle .icon-weixin {
+  line-height: 120rpx;
+  color: #ff5555;
+  font-size: 24px;
+}
+.activity .user_box .box .box_circle .icon-pingjia {
+  line-height: 120rpx;
+  color: #ff5555;
+  font-size: 24px;
+}
+.activity .user_box .box .icon_title {
+  display: block;
+}
+.housekeeper {
+  width: 100%;
+  margin-top: 20rpx;
+}
+.housekeeper .service_name {
+  height: 30rpx;
+  margin-bottom: 20rpx ;
+}
+.housekeeper .service_name .housekepper_title {
+  float: left;
+  margin-left: 20rpx;
+  font-size: 15px;
+  color: #000000;
+  opacity: 80%;
+  line-height: 30rpx;
+}
+.housekeeper .service_name .detaile {
+  line-height: 30rpx;
+  margin-left: 20rpx;
+  float: left;
+  font-size: 10px ;
+  color: #000000;
+  opacity: 80%;
+}
+.housekeeper .housekeeper_box {
+  width: 100%;
+  height: 360rpx;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 2px #ccc;
+}
+.housekeeper .housekeeper_box .box_content {
+  float: left;
+  width: 100%;
+  display: flex;
+}
+.housekeeper .housekeeper_box .box_content .housekeeper_icon {
+  margin-top: 72rpx;
+  width: 33.3%;
+  text-align: center;
+}
+.housekeeper .housekeeper_box .box_content .housekeeper_icon .icon-querenhetongquerenhetongqueding {
+  color: #ff5555;
+  font-size: 30px;
+}
+.housekeeper .housekeeper_box .box_content .housekeeper_icon .icon-zhuanzu {
+  color: #ff5555;
+  font-size: 30px;
+}
+.housekeeper .housekeeper_box .box_content .housekeeper_icon .icon-ic_business_refund24px {
+  color: #ff5555;
+  font-size: 30px;
+}
+.housekeeper .housekeeper_box .box_content .housekeeper_icon .icon-zmxy {
+  color: #ff5555;
+  font-size: 30px;
+}
+.housekeeper .housekeeper_box .box_content .housekeeper_icon .icon-dingdan {
+  color: #ff5555;
+  font-size: 30px;
+}
+.housekeeper .housekeeper_box .box_content .housekeeper_icon .icon_title {
+  margin-top: 15rpx;
+  font-size: 15px;
+  color: #000000;
+  opacity: 80%;
+}
